@@ -1,1 +1,55 @@
-<mxfile host="app.diagrams.net" modified="2022-08-19T06:52:50.015Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" version="20.2.3" etag="cgTLgABEZ0xE3uXptzH8" type="github"><diagram id="-_wro3sK8BHKsMkC_E-Z">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-08-19T07:11:38.339Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="sX2nn-Ic9jcuaVL0IuKu" version="20.2.3" type="github">
+  <diagram id="-_wro3sK8BHKsMkC_E-Z" name="第 1 页">
+    <mxGraphModel dx="1422" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-1" target="XHr0wN_nszfaJ2q3nSJs-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-1" value="MapperScan注解的使用" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="130" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-2" target="XHr0wN_nszfaJ2q3nSJs-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-2" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;触发&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;@Import(MapperScannerRegistrar.class)&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="285" width="300" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-4" target="XHr0wN_nszfaJ2q3nSJs-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-4" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MapperScannerRegistrar实现了 &lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ImportBeanDefinitionRegistrar接口&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;直接触发：registerBeanDefinitions方法的加载&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;br&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="477.5" width="430" height="142.5" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-6" target="XHr0wN_nszfaJ2q3nSJs-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-6" value="该方法&amp;nbsp;创建MapperScannerConfigurer的BeanDefinition&lt;br&gt;&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;BeanDefinitionBuilder builder = BeanDefinitionBuilder.&lt;span style=&quot;font-style:italic;&quot;&gt;genericBeanDefinition&lt;/span&gt;(MapperScannerConfigurer.&lt;span style=&quot;color:#cc7832;&quot;&gt;class&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;对于其中的配置，通过解析MapperScan方法中的参数信息，特别是&amp;nbsp;basePackage" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="741.25" width="775" height="138.75" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-8" target="XHr0wN_nszfaJ2q3nSJs-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-8" value="spring初始化&amp;nbsp;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MapperScannerConfigurer时，由于其实现了&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;BeanDefinitionRegistryPostProcessor，&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;会加载：&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;void &lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;postProcessBeanDefinitionRegistry&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;(BeanDefinitionRegistry registry)&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="332.5" y="924.38" width="667.5" height="145.62" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-10" target="XHr0wN_nszfaJ2q3nSJs-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-10" value="最终通过&amp;nbsp;实例化：&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;ClassPathMapperScanner，调用其中的scan方法，最终走到该方法中的&amp;nbsp;doScan方法&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="606.25" y="1192.81" width="373.75" height="107.19" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontColor=#000000;" edge="1" parent="1" source="XHr0wN_nszfaJ2q3nSJs-12" target="XHr0wN_nszfaJ2q3nSJs-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-12" value="这里就会将&amp;nbsp;每个扫描出来的bean，统一加上&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MapperFactoryBean，并根据其构造方法，调用&lt;br&gt;&lt;/span&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;definition.getConstructorArgumentValues().addGenericArgumentValue(beanClassName);&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;传入mapper接口&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="733.13" y="1403.6" width="596.87" height="276.4" as="geometry" />
+        </mxCell>
+        <mxCell id="XHr0wN_nszfaJ2q3nSJs-14" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;MapperFactoryBean中的getObject（）最终返回的就是 mapper接口的代理对象&lt;/pre&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="613.13" y="1840" width="626.87" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
